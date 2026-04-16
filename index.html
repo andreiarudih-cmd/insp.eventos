@@ -54,37 +54,35 @@ input,select,textarea{font-family:var(--font-b);font-size:16px}/* 16px prevents 
 
 /* ── HEADER ── */
 .app-header{
-  position:sticky;top:0;z-index:200;
-  background:var(--sage);
-  display:flex;align-items:center;justify-content:space-between;
-  min-height:60px;
-  box-shadow:var(--sh-lg);
-  padding:8px 16px;
-  gap:14px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 96px;
+    box-shadow: var(--sh-lg);
+    padding: 10px 28px;
+    gap: 20px;
 }
-.header-logo-wrap{
-  display:flex;align-items:center;
-  flex-shrink:0;
-  padding-right:12px;
-  border-right:1px solid rgba(255,255,255,.28);
-  cursor:pointer;
+/* IMAGEM DO LOGO */
+.header-logo{
+    width: 100%;
+    max-width: 320px;
+    height: 72px;
+    object-fit: contain;
+    object-position: left center;
+    display: block;
 }
-.header-logo{height:70px;width:auto;object-fit:contain;display:block}
-.header-logo-wrap:hover .header-logo{transform:scale(1.03)}
-
 /* Menu horizontal em todos os dispositivos */
-.hamburger{display:none !important}
 .header-nav{
-  display:flex;
-  flex-direction:row;
-  gap:16px;
-  padding:0 4px;
-  overflow-x:auto;
-  flex:1;
-  -webkit-overflow-scrolling:touch;
-  scrollbar-width:none;
-  align-items:center;
-  justify-content:center;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
 }
 .header-nav::-webkit-scrollbar{display:none}
 .nav-tab{
